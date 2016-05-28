@@ -60,7 +60,8 @@ public class StockStreaming {
 			keyBy(0).
 			timeWindow(Time.seconds(30)).
 			sum(1).
-			addSink(new CustomSink());
+			print();
+//			addSink(new CustomSink());
 		
 //		DataStream<Tuple2<String, Double>> sumtocks = window.sum(1);
 //		sumtocks.print();
